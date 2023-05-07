@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --dark:#19283f;
+    --cyan:#32d1cc;
+    --yellow:#ffc400;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.dark{
+    background-color: var(--dark);
+}
+.light{
+    background-color: #eee;
+}
+.cyan{
+    background-color: var(--cyan);
+}
+.yellow{
+    background-color: var(--yellow);
+}
+.text-cyan{
+    color:var(--cyan);
+}
+.text-yellow{
+    color: var(--yellow);
+}
+/* Navbar */
+.nav-link:hover{
+    color:var(--cyan);
+    cursor: pointer;
+}
+#job{
+    position: relative;
+    visibility: visible;
+    color:var(--cyan);
+}
+#job::after{
+    content: '';
+    position: absolute;
+    right: -10px;
+    top:0.5px;
+    background-color: var(--cyan);
+    width: 5px;
+    height: 100%;
+
+}
+
+/* Home */
+.portfolio-img{
+    width: 100%;
+    max-width: 20rem;
+}
+/* Portfolio */
+.project-details{
+    transition: 0.5s;
+    opacity: 0.6;
+}
+.project:hover .project-details{
+    top:0 !important;
+}
+/* Services */
+.card{
+    background-color: transparent !important;
+}
+
+/* Contact */
+.control{
+    height: 35px;
+}
+.control:focus{
+    outline: none;
+}
+textarea{
+    outline: none;
+}
